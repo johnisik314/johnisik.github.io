@@ -1,7 +1,7 @@
 
 /*dsbdbdb*/
 
-@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=Montserrat:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=Montserrat:wght@300;400;500;600&family=Noto+Sans:wght@300;400;500;600&display=swap');
 
 *{
     margin: 0;
@@ -10,13 +10,14 @@
 body{
     font-family: 'Dosis', sans-serif;
     font-family: 'Montserrat', sans-serif;
+    font-family: 'Noto Sans', sans-serif;
 }
 html{
     scroll-behavior: smooth;
 }
 
 p{
-    color:aqua
+    color:black
 }
 
 /*Transition */
@@ -140,4 +141,71 @@ a:hover{
 }
 .hamburger-icon span:first-child {
     transform: none;
+}
+
+/*SECTION*/
+
+section{
+    padding-top: 4vh;
+    height: 96vh;
+    margin:0 10rem;
+    box-sizing: border-box;
+    min-height: fit-content;
+}
+
+.section_container{
+    display: flex;
+}
+
+/*profile section*/
+
+#profile{
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    height: 80vh;
+}
+
+.section_container{
+    display: flex;
+    height: 400px;
+    width: 400px;
+    margin: auto 0;
+}
+
+.section_text{
+    align-self: center;
+    text-align: center;
+}
+
+.section_text p{
+    font-weight: 600;
+}
+
+.section_text_p1{
+    text-align: cener;
+}
+
+.section_text_p1{
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+}
+
+.title{
+    font-size: 3rem;
+    text-align: center;
+}
+
+#social_container{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    gap: 1rem;
+}
+
+/*ICON*/
+
+.icon{
+    cursor: pointer;
+    height: 2rem;
 }
