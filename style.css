@@ -17,7 +17,7 @@ html{
 }
 
 p{
-    color:black
+    color:darkslategray
 }
 
 /*Transition */
@@ -47,7 +47,7 @@ nav{
 }/* gap*/
 
 a{
-    color: black;
+    color: gray;
     text-decoration:none;
     text-decoration-color: white;
 }
@@ -171,6 +171,7 @@ section{
     height: 400px;
     width: 400px;
     margin: auto 0;
+    clip-path: circle(12.5rem);
 }
 
 .section_text{
@@ -186,9 +187,9 @@ section{
     text-align: cener;
 }
 
-.section_text_p1{
+.section_text_p2{
     font-size: 1.75rem;
-    margin-bottom: 1rem;
+    margin-bottom: 1rem; 
 }
 
 .title{
@@ -207,5 +208,52 @@ section{
 
 .icon{
     cursor: pointer;
+    margin-top: 0.7rem;
     height: 2rem;
+    gap:1rem;
+    border-radius: .3rem;
+}
+/*BUTTONS*/
+
+.btn-container{
+    display:flex;
+    justify-content: center;
+    height: 2rem;
+    gap:1rem;
+}
+
+.btn {
+    font-weight: 600;
+    transition: all 300ms ease;
+    padding: 1 rem;
+    width: 8rem;
+    border-radius: 2rem;
+}
+
+.btn-color-1, .btn-color-2{
+    border: rgb(53, 53, 53) 0.1rem solid;
+}
+
+.btn-color-1:hover,
+.btn-color-2:hover{
+    cursor: pointer;
+}
+
+.btn-color-1,
+.btn-color-2:hover{
+    background:rgb(53,53,53);
+    color:white;
+}
+.btn-color-1:hover{
+    background: rgb(0,0,0);
+}
+.btn-color-2{
+    background:none;
+}
+.btn-color-2:hover{
+    border: white 0.1rem solid;
+}
+
+.btn-container{
+    gap:1rem;
 }
