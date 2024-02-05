@@ -9,7 +9,7 @@
 </head>
 <body>
     <nav id="desktop-nav">
-        <div class="logo">John helo</div>
+        <div class="logo">John Isik</div>
         <div>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
@@ -37,7 +37,11 @@
     </nav>
     <section id="profile">
         <div class="section_container">
-            <img src="./assets/PROFILE-IMAGE.png" alt="John Isik Profile Picture">
+            <img src="./assets/PROFILE-IMAGE.png" 
+            alt="John Isik Profile Picture" 
+            class="section_pic-container prof-pic"
+            >
+            
         </div>
         <div class="section_text">
             <p class="section_text_p1">Hello, I'm</p>
@@ -77,22 +81,75 @@
                     onclick="openInstaProfile()"
                 >
             </div>
+            
         </div>
+        
     </section>
     <section id="about">
-        <p class="section_text1_p1">Get To Know More</p>
+        <p class="section_text_p1">Get To Know More</p>
         <h1 class="title">About Me</h1>
-        <div class="section-container">
+        <div class="section_container">
             <div class="section_pic-container">
-                <img src="" alt="Profile Picture">
+                <img src="./assets/cat_1.png" 
+                alt="Profile Picture" 
+                class="about-pic">
             </div>
             <div class="about-details-container">
-                <div class="about-container">
-                    <img src="" alt="Experience Icon">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./assets/education.png" 
+                        alt="Education Icon" 
+                        class="icon">
+                        <h3>Education</h3>
+                        <p>Queens College, CUNY <br />B.A. Computer Science<br />Minor in Mathematics</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assets/experience.png" alt="Experience Icon" class="icon">
+                        <h3>Experience</h3>
+                        <p>Starbucks - Barista</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor alias omnis veniam. Assumenda eligendi ipsam dolorum consectetur sapiente corrupti earum porro error doloremque hic ab veritatis ipsum reprehenderit distinctio modi, aut deleniti suscipit culpa voluptatem. Placeat officiis facilis, deleniti dolore laudantium fuga pariatur impedit praesentium nesciunt aliquam vero et officia.</p>
                 </div>
             </div>
         </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow"
+        onclick="location.href='./#skills'">
     </section>
+    <section id="skills">
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow"
+        onclick="location.href='./#projects'">
+    </section>
+    <section id="projects">
+        <h1 class="title">Projects</h1>
+        <div class="projects_container">
+            <div class="project-container">
+                <img src="./assets/education.png" 
+                alt="Education Icon" 
+                class="icon">
+                <h3>Syntax Analyzer</h3>
+                <p>Algorithm to help you find your syntax errors. <br />C++</p>
+            </div>
+            <div class="project-container">
+                <img src="./assets/education.png" 
+                alt="Education Icon" 
+                class="icon">
+                <h3>Elevator Simulation</h3>
+                <p>Real time simulation to calculate average Waiting time, for your eleavator.<br />Java</p>
+            </div>
+            <div class="project-container">
+                <img src="./assets/education.png" 
+                alt="Education Icon" 
+                class="icon">
+                <h3>Weather-Inspired TV Picks</h3>
+                <p>Get a recumendation from a genre thats corolated to the weather in your area!!<br />JavaScript, HTML</p>
+            </div>
+            
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow"
+        onclick="location.href='./#contact'">
+    </section>
+    <section id="contact"></section>
     <script src="script.js"></script>
 </body>
 <footer class="">
