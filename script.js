@@ -14,3 +14,6 @@ function openGithubProfile(){
 function openInstaProfile(){
     window.open('https://www.instagram.com/johnisik314/', '_blank');
 }
+function sendEmail(){
+    window.open('mailto:johnisik314@gmail.com', '_blank');
+}

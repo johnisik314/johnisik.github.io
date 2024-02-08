@@ -105,8 +105,8 @@
                     </div>
                     <div class="details-container">
                         <img src="./assets/experience.png" alt="Experience Icon" class="icon">
-                        <h3>Experience</h3>
-                        <p>Starbucks - Barista</p>
+                        <h3>Skills</h3>
+                        <p>Java, C++, Python, Dart, JS, HTML, CSS <br/>AWS, Flutter, React, git</p>
                     </div>
                 </div>
                 <div class="text-container">
@@ -115,11 +115,7 @@
             </div>
         </div>
         <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow"
-        onclick="location.href='./#skills'">
-    </section>
-    <section id="skills">
-        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow"
-        onclick="location.href='./#projects'">
+        onclick="location.href='./#project'">
     </section>
     <section id="projects">
         <h1 class="title">Projects</h1>
@@ -143,13 +139,43 @@
                 alt="Education Icon" 
                 class="icon">
                 <h3>Weather-Inspired TV Picks</h3>
-                <p>Get a recumendation from a genre thats corolated to the weather in your area!!<br />JavaScript, HTML</p>
+                <p>Crafted from real-time weather data and infused with a custom algorithm to select shows matching your atmospheric vibe!<br />JavaScript, HTML</p>
             </div>
             
         <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow"
         onclick="location.href='./#contact'">
     </section>
-    <section id="contact"></section>
+    <section id="contact">
+        <p class="title">Contact</p>
+        <div class="section_container">
+            <div class="icon-container">
+                <img 
+                    src="./assets/icon-linkedin.png" 
+                    alt="My Linkedin Profile"
+                    class="icon"
+                    onclick="openLinkedInProfile()"
+                >
+                <img 
+                    src="./assets/icon-github.png" 
+                    alt="My Github Profile"
+                    class="icon"
+                    onclick="openGithubProfile()"
+                >
+                <img 
+                    src="./assets/icon-instagram.png" 
+                    alt="My Instagram Profile"
+                    class="icon"
+                    onclick="openInstaProfile()"
+                >
+            </div>
+            <div class="email-button-container">
+                <button class="btn-email" onclick="sendEmail()">
+                    johnisik314@gmail.com
+                </button>
+            </div>
+        </div>
+    </section>
+    
     <script src="script.js"></script>
 </body>
 <footer class="">
