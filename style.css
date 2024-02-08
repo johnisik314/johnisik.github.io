@@ -277,6 +277,9 @@ section{
     justify-content: center;
     flex-direction: column;
 }
+.about-p{
+    text-align: center;
+}
 
 .about-containers,
 .about-details-container{
