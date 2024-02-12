@@ -52,10 +52,10 @@ a{
     text-decoration-color: white;
 }
 a:hover{
-    color: darkred;
+    color: black;
     text-decoration:underline;
     text-underline-offset: .2rem;
-    text-decoration-color: darkred;
+    text-decoration-color: black;
 }
 
 .logo{
@@ -88,7 +88,7 @@ a:hover{
 .hamburger-icon span {
     width: 100%;
     height: 2px;
-    background-color: darkred;
+    background-color: black;
     transition: all 0.3 ease-in-out;
 }
 
@@ -110,7 +110,7 @@ a:hover{
     padding: 10px;
     text-align: center;
     font-size: 1.5rem;
-    color: darkred;
+    color: black;
     text-decoration: none;
     transition: all 0.3 ease-in-out;
 }
@@ -166,14 +166,11 @@ section{
     height: 80vh;
 }
 
-.section_pic-container{
+.profile-pic-container{
     display: flex;
     height: 400px;
-    width: 4000px;
+    width: 400px;
     margin: auto 0;
-    
-}
-.prof-pic{
     clip-path: circle(12.5rem);
 }
 
@@ -267,6 +264,17 @@ section{
     position: relative;
 }
 
+.about-pic-container{
+    display: flex;
+    height: 400px;
+    width: 400px;
+    margin: auto 0;
+    border-radius: 0rem;
+}
+.about-pic{
+    border-radius: 2rem;
+}
+
 .about-containers{
     gap: 2rem;
     margin-bottom: 2rem;
@@ -284,11 +292,7 @@ section{
 .about-containers,
 .about-details-container{
     display: flex;
-}
-
-.about-pic{
-    border-radius: 2rem;
-}   
+} 
 
 .arrow{
     position: absolute;
@@ -310,11 +314,8 @@ section{
     gap: 4rem;
     height: 80%;
 }
-.section_pic-container{
-    height: 400px;
-    width: 400px;
-    margin: auto 0;
-}
+
+
 
 /*PROJECTS*/
 #projects{
@@ -379,7 +380,7 @@ section{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 0.5rem;
+    gap: 2rem;
     margin: 1rem;
 }
 
