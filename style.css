@@ -316,15 +316,6 @@ section{
     margin: auto 0;
 }
 
-/*SKILLS*/
-#skills{
-    position: relative;
-}
-.arrow{
-    position: absolute;
-    right: -5rem;
-    bottom: 2.5rem;
-}
 /*PROJECTS*/
 #projects{
     position: relative;
@@ -370,46 +361,34 @@ section{
 
 /* Adjustments for contact section */
 #contact {
-    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 80vh;
 }
 
-.section_container {
+.contact-container {
+    display: flex;
+    border-radius: 2rem;
+    margin: 2rem auto;
+    justify-content: center;
+    padding: 0.2rem;
+}
+
+.contact-info-container {
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 0.5rem;
+    margin: 1rem;
 }
 
-.icon-container {
-    display: flex;
-    gap: 2rem; /* Adjust gap between icons */
+.contact-info-container p{
+    font-size: larger;
+    margin-top: 0.5rem;
 }
 
-.icon {
-    cursor: pointer;
-    margin-top: auto 0;
-    height: 2.2rem;
-    border-radius: .5rem;
-}
-
-.email-button-container {
-    margin-left: 2rem;
-}
-
-.btn-email {
-    cursor: pointer;
-    font-size: .9rem;
-    font-weight: 700;
-    transition: background-color 300ms ease, color 300ms ease;
-    padding: .7rem .9rem;
-    margin-top: .6rem;
-    border-radius: .9rem;
-    width: 120%;
-    color: black;
-    background-color: transparent;
-    border: 1px solid white;
-}
-
-.btn-email:hover{
-    background-color: black;
-    color: white;
-}
+.contact-icon {
+    cursor: default;
+    height: 2.5rem;
+}   

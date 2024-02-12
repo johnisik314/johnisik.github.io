@@ -13,7 +13,6 @@
         <div>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
-                <li><a href="#about">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -29,7 +28,6 @@
             </div>  
             <div class="menu-links">
                 <li><a href="#about" onclick="toggleMenu()">About</a></li>
-                <li><a href="#about" onclick="toggleMenu()">Skills</a></li>
                 <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
                 <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
             </div>
@@ -152,39 +150,43 @@
         onclick="location.href='./#contact'">
     </section>
     <section id="contact">
-        <p class="title">Contact</p>
-        <div class="section_container">
-            <div class="icon-container">
+        <p class="section_text_p1">Get in Touch</p>
+        <p class="title">Contact Me</p>
+        <div class="contact-container">
+            <div class="contact-info-container">
                 <img 
                     src="./assets/icon-linkedin.png" 
                     alt="My Linkedin Profile"
-                    class="icon"
+                    class="icon contact-icon"
                     onclick="openLinkedInProfile()"
                 >
+                <p onclick="openLinkedInProfile()">LinkedIn</p>
+            </div>
+            <div class="contact-info-container">
                 <img 
                     src="./assets/icon-github.png" 
-                    alt="My Github Profile"
-                    class="icon"
-                    onclick="openGithubProfile()"
+                    alt="Email icon"
+                    class="icon contact-icon email-icon"
+                    onclick="sendEmail()"
                 >
-                <img 
-                    src="./assets/icon-instagram.png" 
-                    alt="My Instagram Profile"
-                    class="icon"
-                    onclick="openInstaProfile()"
-                >
-            </div>
-            <div class="email-button-container">
-                <button class="btn-email" onclick="sendEmail()">
-                    johnisik314@gmail.com
-                </button>
+                <p onclick="sendEmail()">johnisik314@gmail.com</p>
             </div>
         </div>
     </section>
     
     <script src="script.js"></script>
 </body>
-<footer class="">
+<footer>
+    <nav>
+        <div class="links-container">
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <a>Copyright &#169;</a>
     <a href="https://www.flaticon.com/free-icons/instagram" title="instagram icons">Instagram, </a>
     <a href="https://www.flaticon.com/free-icons/github" title="github icons">Github, </a>
     <a href="https://www.flaticon.com/free-icons/linkedin" title="linkedin icons">Linkedin icons created by Dave Gandy - Flaticon</a>
