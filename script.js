@@ -19,20 +19,17 @@ function sendEmail(){
 }
 let currentIndex = 0;
 
-function moveSlide(direction) {
-    const projects = document.querySelector(".projects_container");
-    const projectWidth = projects.querySelector(".project-container").offsetWidth + 20; // Includes gap
-    const totalProjects = projects.children.length;
-    const visibleProjects = 3;
+function moveCarousel(direction) {
+    const carousel = document.querySelector(".carousel");
+    const projects = document.querySelectorAll(".project-box");
+    const projectWidth = projects[0].offsetWidth + 15; // Includes gap
+    const totalProjects = projects.length;
 
-    // Calculate the max index
-    const maxIndex = totalProjects - visibleProjects;
+    // Update current index with wrap-around
+    currentIndex = (currentIndex + direction + totalProjects) % totalProjects;
 
-    // Update current index
-    currentIndex += direction;
-    if (currentIndex < 0) currentIndex = 0;
-    if (currentIndex > maxIndex) currentIndex = maxIndex;
-
-    // Apply transformation
-    projects.style.transform = `translateX(-${currentIndex * projectWidth}px)`;
+    // Calculate the new transform value
+    const transformValue = -(currentIndex * projectWidth);
+    carousel.style.transform = `translateX(${transformValue}px)`;
 }
+
