@@ -5,9 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="projects.css">
-
     <link rel="stylesheet" href="mediaqueries.css">
+    <link rel="stylesheet" href="projects.css">
 </head>
 <body>
     <nav id="desktop-nav">
@@ -27,7 +26,7 @@
                 <span></span>
                 <span></span>
                 <span></span>
-            </div>  
+            </div>
             <div class="menu-links">
                 <li><a href="#about" onclick="toggleMenu()">About</a></li>
                 <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
@@ -37,141 +36,95 @@
     </nav>
     <section id="profile">
         <div class="profile-pic-container">
-            <img src="./assets/PROFILE-IMAGE.png" 
-            alt="John Isik Profile Picture">
+            <img src="./assets/PROFILE-IMAGE.png" alt="John Isik Profile Picture">
         </div>
         <div class="section_text">
             <p class="section_text_p1">Hello, I'm</p>
             <h1 class="title">John Isik</h1>
             <p class="section_text_p2">Master's student in Data Science</p>
             <div class="btn-container">
-                <button
-                    class="btn btn-color-2"
-                    onclick="window.open('./assets/John_Isik_Resume.pdf')"
-                >
+                <button class="btn btn-color-2" onclick="window.open('./assets/John_Isik_Resume.pdf')">
                     Resume
                 </button>
-                <button
-                    class="btn btn-color-1"
-                    onclick="location.href='./#contact'"
-                >
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">
                     Contact Info
                 </button>
             </div>
             <div class="social_container">
-                <img 
-                    src="./assets/icon-linkedin.png" 
-                    alt="My Linkedin Profile"
-                    class="icon"
-                    onclick="openLinkedInProfile()"
->
-                <img 
-                    src="./assets/icon-github.png" 
-                    alt="My Github Profile"
-                    class="icon"
-                    onclick="openGithubProfile()"
-                >
-                <img 
-                    src="./assets/icon-instagram.png" 
-                    alt="My Instagram Profile"
-                    class="icon"
-                    onclick="openInstaProfile()"
-                >
+                <img src="./assets/icon-linkedin.png" alt="My Linkedin Profile" class="icon" onclick="openLinkedInProfile()">
+                <img src="./assets/icon-github.png" alt="My Github Profile" class="icon" onclick="openGithubProfile()">
+                <img src="./assets/icon-instagram.png" alt="My Instagram Profile" class="icon" onclick="openInstaProfile()">
             </div>
-            
         </div>
-        
     </section>
     <section id="about">
         <p class="section_text_p1">Get To Know More</p>
         <h1 class="title">About Me</h1>
         <div class="section_container">
             <div class="about-pic-container">
-                <img src="./assets/cat_1.png" 
-                alt="Profile Picture"
-                class="about-pic">
+                <img src="./assets/cat_1.png" alt="Profile Picture" class="about-pic">
             </div>
             <div class="about-details-container">
                 <div class="about-containers">
                     <div class="details-container">
-                        <img src="./assets/education.png" 
-                        alt="Education Icon" 
-                        class="icon">
+                        <img src="./assets/education.png" alt="Education Icon" class="icon">
                         <h3>Education</h3>
-                        <p>Stevens Institude of Technology<br />M.S. Data Science</p>
+                        <p>Stevens Institute of Technology<br>M.S. Data Science</p>
                     </div>
                     <div class="details-container">
-                        <img src="./assets/education.png" 
-                        alt="Education Icon" 
-                        class="icon">
+                        <img src="./assets/education.png" alt="Education Icon" class="icon">
                         <h3>Education</h3>
-                        <p>Queens College, CUNY <br />B.A. Computer Science<br />Minor in Applied Mathematics</p>
+                        <p>Queens College, CUNY<br>B.A. Computer Science<br>Minor in Applied Mathematics</p>
                     </div>
                     <div class="details-container">
                         <img src="./assets/experience.png" alt="Experience Icon" class="icon">
                         <h3>Skills</h3>
-                        <p>Python, Machine Learning, Data Analysis, SQL, Data Visualization<br/></p>
+                        <p>Python, Machine Learning, Data Analysis, SQL, Data Visualization</p>
                     </div>
                 </div>
                 <div class="about-containers about-p">
-                    <p> I am a graduate student with a strong passion for <strong>developing and optimizing algorithms</strong>, 
+                    <p>I am a graduate student with a strong passion for <strong>developing and optimizing algorithms</strong>, 
                         constantly exploring new technologies to expand my skill set. My interests include 
-                        <strong>data science</strong>, <strong>machine learning</strong>, and <strong>quantum computing</strong>, 
-                        and I am always eager to collaborate on <strong>internships</strong>, <strong>research projects</strong>, 
-                        or <strong>professional opportunities</strong>. I thrive on continuous learning, innovation and I am 
-                        excited to apply my skills in real-world applications.<br /><strong> <--- This is my cat Asher!</strong></p>
+                        <strong>data science</strong>, <strong>machine learning</strong>, and <strong>quantum computing</strong>. 
+                        I am always eager to collaborate on <strong>internships</strong>, <strong>research projects</strong>, 
+                        or <strong>professional opportunities</strong>. I thrive on continuous learning, innovation, and I am 
+                        excited to apply my skills in real-world applications.<br><strong><--- This is my cat Asher!</strong></p>
                 </div>
             </div>
         </div>
-        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow"
-        onclick="location.href='./#project'">
     </section>
     <section id="projects">
-    <h1 class="title">Projects</h1>
-    <div class="carousel-container">
-        <button class="arrow-btn left-arrow" onclick="moveCarousel(-1)">&#8249;</button>
-        <div class="carousel-wrapper">
-            <div class="carousel">
-                <!-- Project Items -->
-                <div class="project-box">Project 1</div>
-                <div class="project-box">Project 2</div>
-                <div class="project-box">Project 3</div>
-                <div class="project-box">Project 4</div>
-                <div class="project-box">Project 5</div>
-                <div class="project-box">Project 6</div>
+        <h1 class="title">Projects</h1>
+        <div class="carousel-container">
+            <button class="arrow-btn left-arrow" onclick="moveCarousel(-1)">&#8249;</button>
+            <div class="carousel-wrapper">
+                <div class="carousel">
+                    <div class="project-box">ToDoList: Spring Boot-based To-Do List application (Java, Spring)</div>
+                    <div class="project-box">Syntax Analyzer: Algorithm to detect syntax errors (C++)</div>
+                    <div class="project-box">Elevator Simulation: Real-time simulation for waiting times (Java)</div>
+                    <div class="project-box">Customer Spending Score: Supervised models for spending prediction (Python)</div>
+                    <div class="project-box">Energy Consumption Analysis: Clustered households using K-Means (Python)</div>
+                    <div class="project-box">Visual Learning Tool: Interactive tool for mathematical derivations (Python)</div>
+                </div>
             </div>
+            <button class="arrow-btn right-arrow" onclick="moveCarousel(1)">&#8250;</button>
         </div>
-        <button class="arrow-btn right-arrow" onclick="moveCarousel(1)">&#8250;</button>
-    </div>
-</section>
-
+    </section>
     <section id="contact">
         <p class="section_text_p1">Get in Touch</p>
         <p class="title">Contact Me</p>
         <div class="contact-container">
             <div class="contact-info-container">
-                <img 
-                    src="./assets/icon-linkedin.png" 
-                    alt="My Linkedin Profile"
-                    class="icon contact-icon"
-                    onclick="openLinkedInProfile()"
-                >
-                <p onclick="openLinkedInProfile()"></p>
+                <img src="./assets/icon-linkedin.png" alt="My Linkedin Profile" class="icon contact-icon" onclick="openLinkedInProfile()">
             </div>
             <div class="contact-info-container">
-                <img 
-                    src="./assets/icon-github.png" 
-                    alt="My Github Profile"
-                    class="icon"
-                    onclick="openGithubProfile()"
-                >
+                <img src="./assets/icon-github.png" alt="My Github Profile" class="icon" onclick="openGithubProfile()">
             </div>
             <div class="contact-info-container">
                 <p onclick="sendEmail()">johnisik314@gmail.com</p>
             </div>
         </div>
     </section>
-    
     <script src="script.js"></script>
 </body>
 <footer>
