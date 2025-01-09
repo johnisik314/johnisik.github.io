@@ -318,46 +318,78 @@ section{
 
 
 /*PROJECTS*/
-#projects{
+/* Projects Section */
+#projects {
     position: relative;
-}
-
-.projects-containers{
-    gap: 2rem;
-    margin-bottom: 2rem;
-    margin-top: 2rem;
-}
-
-.projects-details-container{
-    justify-content: center;
-    flex-direction: column;
-}
-
-.projects-containers{
-    display: flex;
-}
-
-.project-container{
-    padding: 1.5rem;
-    flex: 1;
-    background: white;
-    border-radius: 2rem;
-    border: rgb(53,53,53) 0.1rem solid;
-    border-color: rgb(163,163,163);
+    margin: 4rem auto;
     text-align: center;
-    margin-bottom: 1rem;
-    margin-top: 1rem;
+}
 
+.projects-container {
+    display: flex; /* Arrange projects side-by-side */
+    gap: 2rem; /* Space between columns */
+    overflow-x: auto; /* Enable horizontal scrolling */
+    padding: 1rem; /* Add padding for better spacing */
+    scroll-behavior: smooth; /* Smooth scrolling effect */
 }
-.project_container{
-    gap: 4rem;
-    height: 80%;
+
+.project-container {
+    flex: 0 0 300px; /* Fixed width for each project */
+    height: auto; /* Auto height to fit content */
+    padding: 1.5rem; /* Internal padding for content */
+    background: white; /* Background color for cards */
+    border: 1px solid rgb(163, 163, 163); /* Card border */
+    border-radius: 2rem; /* Rounded corners */
+    text-align: center; /* Center content in the card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+    transition: transform 0.3s, box-shadow 0.3s; /* Hover effect transition */
+    margin-bottom: 1rem; /* Bottom margin for alignment */
 }
-.arrow{
-    position: absolute;
-    right: -5rem;
-    bottom: 2.5rem;
+
+.project-container:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
 }
+
+.project-container img {
+    width: 80px; /* Icon width */
+    height: 80px; /* Icon height */
+    margin-bottom: 1rem; /* Space below the icon */
+}
+
+.project-container h3 {
+    font-size: 1.5rem; /* Project title font size */
+    color: #333; /* Darker text color */
+    margin: 0.5rem 0; /* Space above and below the title */
+}
+
+.project-container p {
+    font-size: 1rem; /* Description font size */
+    color: #666; /* Gray text color */
+    line-height: 1.5; /* Spacing between lines of text */
+}
+
+/* Horizontal Scrollbar Styling */
+.projects-container::-webkit-scrollbar {
+    height: 8px; /* Height of the scrollbar */
+}
+
+.projects-container::-webkit-scrollbar-thumb {
+    background-color: #999; /* Color of the scrollbar handle */
+    border-radius: 4px; /* Rounded edges for the scrollbar handle */
+}
+
+.projects-container::-webkit-scrollbar-track {
+    background-color: transparent; /* Transparent scrollbar track */
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 600px) {
+    .project-container {
+        flex: 0 0 250px; /* Adjust card width for small screens */
+    }
+}
+
 /*CONTACT*/
 
 /* Adjustments for contact section */
