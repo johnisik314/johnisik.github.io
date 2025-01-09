@@ -20,19 +20,52 @@ body {
     height: fit-content;
 }
 
-/* Projects Section */
+/* Projects Section Slider */
+.slider-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.slider-wrapper {
+    overflow: hidden;
+    width: 90%;
+}
+
 .projects_container {
     display: flex;
-    flex-wrap: wrap;
+    transition: transform 0.4s ease-in-out;
+    width: max-content;
     gap: 20px;
-    justify-content: space-evenly;
-    align-items: flex-start;
 }
 
 .project-container {
-    text-align: center;
-    width: 30%; /* Default: three projects per row */
-    margin: 10px 0;
+    flex: 0 0 calc(33.33% - 20px); /* Show 3 projects per slide */
+    box-sizing: border-box;
+}
+
+/* Arrow Buttons */
+.arrow-btn {
+    font-size: 2rem;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    color: #333;
+}
+
+.left-arrow {
+    left: 10px;
+}
+
+.right-arrow {
+    right: 10px;
 }
 
 /* Responsive Styles */
@@ -108,10 +141,8 @@ body {
         margin-bottom: -4rem;
     }
 
-    /* Projects Section Adjustment */
+    /* Adjust slider for smaller screens */
     .projects_container {
-        flex-direction: row;
-        justify-content: space-around;
         gap: 15px;
     }
 
@@ -182,7 +213,7 @@ body {
         height: fit-content;
     }
 
-    /* Projects Section Adjustment */
+    /* Adjust slider for single-column layout */
     .projects_container {
         flex-direction: column;
         justify-content: center;
@@ -193,52 +224,4 @@ body {
         width: 90%; /* Full width for single-column layout */
         margin: 0 auto;
     }
-}
-/* Slider Container */
-.slider-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-}
-/* Wrapper for Sliding Projects */
-.slider-wrapper {
-    overflow: hidden;
-    width: 90%;
-}
-
-.projects_container {
-    display: flex;
-    transition: transform 0.4s ease-in-out;
-    width: max-content;
-    gap: 20px;
-}
-
-/* Project Container */
-.project-container {
-    flex: 0 0 calc(33.33% - 20px); /* Show 3 projects per slide */
-    box-sizing: border-box;
-}
-
-/* Arrow Buttons */
-.arrow-btn {
-    font-size: 2rem;
-    border: none;
-    background: transparent;
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 2;
-    color: #333;
-}
-
-.left-arrow {
-    left: 10px;
-}
-
-.right-arrow {
-    right: 10px;
 }
