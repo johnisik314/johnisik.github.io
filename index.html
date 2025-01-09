@@ -125,38 +125,49 @@
         onclick="location.href='./#project'">
     </section>
     <section id="projects">
-        <h1 class="title">Projects</h1>
-        <div class="projects_container">
+    <h1 class="title">Projects</h1>
+    <div class="projects_container" style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: space-evenly;">
 
-            <div class="project-container">
-                <img src="./assets/education.png" 
-                alt="Education Icon" 
-                class="icon">
-                <h3>ToDoList</h3>
-                <p>Spring Boot-based To-Do List application
-                    <br />Java, Spring</p>
-            </div>
-            <div class="project-container">
-                <img src="./assets/education.png" 
-                alt="Education Icon" 
-                class="icon"
-                onclick="window.open('https://github.com/johnisik314/ErrorCorrection_SyntaxAnalyzer', '_blank');">
-                <h3 onclick="window.open('https://github.com/johnisik314/ErrorCorrection_SyntaxAnalyzer', '_blank');">Syntax Analyzer</h3>
-                <p>Algorithm to help you find syntax errors in code<br />C++</p>
-            </div>
-            <div class="project-container">
-                <img src="./assets/education.png" 
-                alt="Education Icon" 
-                class="icon"
-                onclick="window.open('https://github.com/johnisik314/ElevatorSimulation_JavaThreads', '_blank');">
-                <h3 onclick="window.open('https://github.com/johnisik314/ElevatorSimulation_JavaThreads', '_blank');">Elevator Simulation</h3>
-                <p>Real time simulation to calculate average Waiting time<br />Java</p>
-            </div>
-            
-            
-        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow"
-        onclick="location.href='./#contact'">
-    </section>
+        <!-- Existing Projects -->
+        <div class="project-container">
+            <img src="./assets/education.png" alt="Education Icon" class="icon">
+            <h3>ToDoList</h3>
+            <p>Spring Boot-based To-Do List application<br>Java, Spring</p>
+        </div>
+        <div class="project-container">
+            <img src="./assets/education.png" alt="Education Icon" class="icon"
+            onclick="window.open('https://github.com/johnisik314/ErrorCorrection_SyntaxAnalyzer', '_blank');">
+            <h3 onclick="window.open('https://github.com/johnisik314/ErrorCorrection_SyntaxAnalyzer', '_blank');">Syntax Analyzer</h3>
+            <p>Algorithm to help you find syntax errors in code<br>C++</p>
+        </div>
+        <div class="project-container">
+            <img src="./assets/education.png" alt="Education Icon" class="icon"
+            onclick="window.open('https://github.com/johnisik314/ElevatorSimulation_JavaThreads', '_blank');">
+            <h3 onclick="window.open('https://github.com/johnisik314/ElevatorSimulation_JavaThreads', '_blank');">Elevator Simulation</h3>
+            <p>Real-time simulation to calculate average waiting time<br>Java</p>
+        </div>
+
+        <!-- New Projects -->
+        <div class="project-container">
+            <img src="./assets/education.png" alt="Data Analysis Icon" class="icon">
+            <h3>Customer Spending Score</h3>
+            <p>Built supervised models to predict customer spending behavior<br>Python, Scikit-learn</p>
+        </div>
+        <div class="project-container">
+            <img src="./assets/education.png" alt="Data Analysis Icon" class="icon">
+            <h3>Energy Consumption Analysis</h3>
+            <p>Clustered households and reduced dimensionality for insights<br>Python, K-Means, PCA</p>
+        </div>
+        <div class="project-container">
+            <img src="./assets/education.png" alt="Mathematics Tool Icon" class="icon">
+            <h3>Visual Learning Tool</h3>
+            <p>Developed an interactive tool for mathematical derivations<br>Python, Matplotlib</p>
+        </div>
+        
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow"
+    onclick="location.href='./#contact'">
+</section>
     <section id="contact">
         <p class="section_text_p1">Get in Touch</p>
         <p class="title">Contact Me</p>
