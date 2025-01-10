@@ -318,77 +318,84 @@ section{
 
 
 /*PROJECTS*/
-/* Projects Section */
 #projects {
-    position: relative;
     margin: 4rem auto;
+    max-width: 1200px; /* Constrain the section width */
+    padding: 0 1rem;
     text-align: center;
+    gap: 2rem;
 }
 
-.projects-container {
-    display: flex; /* Arrange projects side-by-side */
-    gap: 2rem; /* Space between columns */
-    overflow-x: auto; /* Enable horizontal scrolling */
-    padding: 1rem; /* Add padding for better spacing */
-    scroll-behavior: smooth; /* Smooth scrolling effect */
+.projects_container {
+    display: flex;
+    flex-wrap: wrap; /* Enable wrapping for cards */
+    justify-content: center; /* Center-align all cards */
+    gap: 2rem; /* Maintain spacing between cards */
 }
 
 .project-container {
-    flex: 0 0 300px; /* Fixed width for each project */
-    height: auto; /* Auto height to fit content */
-    padding: 1.5rem; /* Internal padding for content */
-    background: white; /* Background color for cards */
-    border: 1px solid rgb(163, 163, 163); /* Card border */
-    border-radius: 2rem; /* Rounded corners */
-    text-align: center; /* Center content in the card */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
-    transition: transform 0.3s, box-shadow 0.3s; /* Hover effect transition */
-    margin-bottom: 1rem; /* Bottom margin for alignment */
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    align-items: center; /* Center content within the card */
+    padding: 1.5rem;
+    background: white;
+    border: 1px solid rgb(163, 163, 163); /* Light border color */
+    border-radius: 2rem; /* Match the rounded corners in About Section */
+    text-align: center;
+    gap: 2rem;
+    width: 300px; /* Fixed width for consistency */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth hover effects */
 }
 
 .project-container:hover {
-    transform: scale(1.05); /* Slight zoom effect on hover */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+    transform: scale(1.05); /* Slight zoom on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
 }
 
 .project-container img {
-    width: 80px; /* Icon width */
-    height: 80px; /* Icon height */
-    margin-bottom: 1rem; /* Space below the icon */
+    display: flex;
+    height: 80px;
+    width: 80px;
+    margin: auto 0;
+    border-radius: 0rem;
+
 }
 
 .project-container h3 {
-    font-size: 1.5rem; /* Project title font size */
-    color: #333; /* Darker text color */
-    margin: 0.5rem 0; /* Space above and below the title */
+    font-size: 1.25rem; /* Match the heading size in About Section */
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #333;
 }
 
 .project-container p {
-    font-size: 1rem; /* Description font size */
-    color: #666; /* Gray text color */
-    line-height: 1.5; /* Spacing between lines of text */
-}
-
-/* Horizontal Scrollbar Styling */
-.projects-container::-webkit-scrollbar {
-    height: 8px; /* Height of the scrollbar */
-}
-
-.projects-container::-webkit-scrollbar-thumb {
-    background-color: #999; /* Color of the scrollbar handle */
-    border-radius: 4px; /* Rounded edges for the scrollbar handle */
-}
-
-.projects-container::-webkit-scrollbar-track {
-    background-color: transparent; /* Transparent scrollbar track */
+    font-size: 1rem; /* Match the paragraph size */
+    line-height: 1.5;
+    color: #666;
 }
 
 /* Responsive Adjustments */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1024px) {
+    .projects-container {
+        gap: 1.5rem; /* Slightly reduce gap on smaller screens */
+    }
+
     .project-container {
-        flex: 0 0 250px; /* Adjust card width for small screens */
+        width: 45%; /* 2 cards per row for tablets */
     }
 }
+
+@media screen and (max-width: 768px) {
+    .project-container {
+        width: 100%; /* Full-width cards for mobile */
+    }
+}
+
+
+
+
+
 
 /*CONTACT*/
 
