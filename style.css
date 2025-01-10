@@ -331,6 +331,7 @@ section{
     flex-wrap: wrap; /* Enable wrapping for cards */
     justify-content: center; /* Center-align all cards */
     gap: 2rem; /* Maintain spacing between cards */
+    margin-top:1rem;
 }
 
 .project-container {
@@ -420,12 +421,12 @@ section{
     align-items: center;
     justify-content: center;
     gap: 2rem;
-    margin: 1rem;
+
 }
 
 .contact-info-container p{
     font-size: larger;
-    margin-top: 0.5rem;
+    margin:1rem;
 }
 
 .contact-icon {
